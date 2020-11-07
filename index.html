@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Practice</title>
+    <meta name="description" content="A template for web projects" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐭</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          <span role="img" aria-hidden="true" style="margin-right: 0.5rem">
+            🐭
+          </span> Mouse Practice!
+        </h1>
+        <p>
+          Move the <span role="img" aria-label="mouse">🖱</span> to find and click hidden animals
+        </p>
+        <div class="count">
+          <b>Count</b>
+          <div id="count">0</div>
+        </div>
+      </header>
+      <div id="field"></div>
+      <div id="end" hidden>
+        <p><b>Great practicing!</b> <span aria-hidden="true" role="img">💪</span></p>
+        <button class="button" id="again">Go again</button>
+      </div>
+    </main>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
